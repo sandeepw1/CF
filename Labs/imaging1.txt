@@ -1,0 +1,16 @@
+Attach a 3 GB hard disk to a Linux VM.
+Create 2 partitions on this hard disk. The first partition of 2 GB and second partition of 1 GB.
+Format the partitions using ext4 file system.
+Mount the first partition in /mnt/part1 and second folder in /mnt/part2 directory.
+Create 4 files in each directory.
+Unmount the partitions. umount /mnt/part1 and umount /mnt/part2
+using dd create image of this entire hard disk and store it by file name ditiss1.img.
+Check the md5 and SHA1 hash of the image file and the hard disk. Make sure it is same.
+Using sudo losetup -l check if any loop devices are present.
+Create loop device for the image using sudo losetup -P -f ditiss1.img
+Mount the loop device for partitions into /mnt/part1 and /mnt/part2. Use lsblk to find loop device details.
+Create a file in /mnt/part1.
+unmount /mnt/part1 and /mnt/part2.
+Attach a new 3 GB hard disk to the VM.
+Write the ditiss1.img image file to this new hard disk using dd
+Verify the md5 hash and SHA1 hash of the image file and the new hard disk is same.
