@@ -1,0 +1,6 @@
+Install AccessData FTK imager inside Windows VM. Put Windows VM in NAT mode and Obtain IP address automatically.
+Attach a new 3 GB hard disk to the VM.
+Create a single partition and format it using NTFS.
+Create some files in it.
+Using FTK imager create an image of this 3 GB hard disk. Use physical drive option.
+Store the file name as Windows1.e01.
