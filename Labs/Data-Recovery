@@ -1,0 +1,12 @@
+Attach a 3 GB hard disk to Windows server. Create a single partition and format it. Now create 4 files in it. 
+Then format the hard disk. 
+Detach the hard disk from Windows server VM and attach it to the forensics VM.
+First check the MD5 and SHA hash.
+Create an image of this hard disk using dd.
+Verify the image md5 and SHA hash is same as the hard disk hash.
+Now detach the 3 GB hard disk from the VM.(As it is a original evidence)
+Add a new 3 GB hard disk to the FOrensics VM. 
+Using dd command write the image file to this new blank hard disk.
+Verify the MD5 and SHA hash of the new hard disk is same as file image.
+Now use photorec to recover data from the new 3 GB  hard disk. (This is how you work on the copy and not on the original evidence) 
+The data will be stored on main OS hard disk
