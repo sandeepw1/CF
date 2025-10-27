@@ -1,0 +1,9 @@
+Attach a 3 GB hard disk to Windows VM. 
+Create 2 partitions. First one of 2 GB and second one of 1 GB
+Format both the partitions using NTFS.
+Create some files in both the partitions. ( atleast 4 files and type something in these files)
+Now format both the partitions .....Use diskmgmt.msc
+Now delete both the partitions. 
+Detach the 3 GB hard disk from the Windows VM and attach it to forensics VM.
+Create a directory using sudo /recovered 
+Using testdisk and photorec recover the files in /recovered directory.
